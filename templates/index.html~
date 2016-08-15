@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script data-require="jquery@2.2.0" data-semver="2.2.0" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script data-require="bootstrap@3.3.2" data-semver="3.3.2" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  <link data-require="bootstrap@3.3.2" data-semver="3.3.2" rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
+<script src="http://jquery-csv.googlecode.com/git/src/jquery.csv.js"></script>
+
+<style>
+.menu-choice-first {
+    display: inline-block;
+}
+
+.tbox{
+    display: inline-block;
+}
+
+.clearfix{
+    clear:both
+}
+tab1 { padding-left: 4em; }
+tab2 { padding-left: 3em; }
+tab11 { padding-left: 1em; }
+tab22 { padding-left: 2em; }
+
+menu-title { font-size:26px; }
+
+#upper{
+	background-image: url(../static/images/ncaa.jpg);
+}
+#selectNumber1{
+ width:250px;   
+}
+#selectNumber2{
+ width:250px;   
+}
+
+.btn .btn-default .dropdown-toggle {
+    height: 22px;
+    font-family: cursive;
+}
+</style>
+
+</head>
+<body> 
+
+ <title>2013 NCAA Tournament Predictions with Flask</title>
+ <h2>2013 NCAA Basketball Tournament Predictions</h2>
+ <h2>  with Python/Pandas/Flask </h2>
+ <h3>Display probabilities of winning for each team in a matchup</h3> <br>
+
+
+ <div id="upper"> </div>
+
+  
+
+  <h3>choose 1st team <tab1>  <tab1> choose 2nd team</h3>
+
+ <div class="menu-choice-first dropdown">
+    <select class="btn btn-default dropdown-toggle" id="selectNumber1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+      
+      <!-- note: title has class menu-title -->
+      <div class="menu-title" aria-labelledby="dropdownMenuLink"> </span> 
+      
+    </select>
+  </div>
+   <tab2> VS <tab2>
+  <div class="menu-choice-first dropdown">
+    <select class="btn btn-default dropdown-toggle" type="button" id="selectNumber2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+      
+      <!-- note: title has class menu-title -->
+      <span class="menu-title">  </span> <span class="caret"></span>
+      
+    </select>
+  </div>
+
+  <div class="form-group">
+	  <div class="row">
+	    <div class="col-sm-6">
+		    <h3>	    
+		    <br> <tab1> has a <tab1><tab2><tab1> has a 
+		    </h3>
+		    <div class="jumbotron">			
+		    <h1> 
+			<tab11><label type="text" id="pred" size="15" ></label> 
+			<tab22>
+			<tab11><label type="text" id="pred2" size="15"</label> 
+		    </h1>
+		    </div>
+		    <h3> <br> %winning prob <tab1><tab1>   %winning prob </tab2> </h3>				   
+	    </div>
+	</div>
+  </div>
+
+  
+
+<script src="../static/js/signUp.js"></script>
+<script src="../static/js/jquery.csv.js"></script>
+
+</body>
+
+</html>
